@@ -1,0 +1,292 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1b1b1b;
+    background-color: #ffffff;
+}
+
+/* NAVBAR */
+.navbar {
+    border-bottom: 3px solid #d92121;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff4b4b !important;
+}
+
+/* CAROUSEL */
+.capa {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.carousel-caption h2 {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    margin-bottom: 0;
+    font-size: 17px;
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* SOBRE  */
+.sobre {
+    padding: 60px 20px;
+}
+
+.sobre h3 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #6c0000;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.sobre > .container > p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+/* Cards */
+.sobre .card {
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sobre .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+}
+
+.sobre .card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.sobre .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre .card-title {
+    color: #6c0000;
+    font-weight: bold;
+}
+
+.sobre .card-text {
+    line-height: 1.5;
+}
+
+.sobre .card .btn {
+    margin-top: auto;
+    background-color: #d92121;
+    border-color: #d92121;
+}
+
+.sobre .card .btn:hover {
+    background-color: #6c0000;
+    border-color: #6c0000;
+}
+
+/* FAQ  */
+#faq {
+    padding: 60px 20px !important;
+    background-color: #f8f8f8;
+}
+
+#faq h2 {
+    color: #6c0000;
+    font-weight: bold;
+}
+
+#accordionAluCar {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#accordionAluCar .accordion-item {
+    border: 1px solid #dddddd;
+}
+
+#accordionAluCar .accordion-button {
+    font-weight: bold;
+}
+
+#accordionAluCar .accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background-color: #6c0000;
+    box-shadow: none;
+}
+
+#accordionAluCar .accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(217, 33, 33, 0.25);
+}
+
+#accordionAluCar .accordion-body {
+    line-height: 1.6;
+}
+
+/* FORMULÁRIO DE CONTATO */
+#contato {
+    padding: 60px 20px !important;
+}
+
+#contato h2 {
+    color: #6c0000;
+    font-weight: bold;
+}
+
+#formContato {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#formContato .form-label {
+    font-weight: bold;
+}
+
+#formContato .form-control {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+
+#formContato .form-control:focus {
+    border-color: #d92121;
+    box-shadow: 0 0 0 0.2rem rgba(217, 33, 33, 0.2);
+}
+
+#formContato .btn {
+    background-color: #d92121;
+    border-color: #d92121;
+    padding: 10px 25px;
+}
+
+#formContato .btn:hover {
+    background-color: #6c0000;
+    border-color: #6c0000;
+}
+
+/* MODAL */
+#modalAluCar .modal-header {
+    background-color: #6c0000;
+    color: #ffffff;
+}
+
+#modalAluCar .modal-title {
+    font-weight: bold;
+}
+
+#modalAluCar .modal-body {
+    line-height: 1.6;
+}
+
+#modalAluCar .modal-footer .btn-secondary {
+    background-color: #d92121;
+    border-color: #d92121;
+}
+
+#modalAluCar .modal-footer .btn-secondary:hover {
+    background-color: #6c0000;
+    border-color: #6c0000;
+}
+
+/* RODAPÉ */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 55px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #dddddd;
+}
+
+footer p {
+    margin: 0;
+    color: #d92121;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/*  RESPONSIVIDADE */
+@media (max-width: 767px) {
+
+    .carousel-item img {
+        height: 350px;
+    }
+
+    .carousel-caption {
+        padding: 12px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 20px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+
+    .sobre {
+        padding: 40px 15px;
+    }
+
+    .sobre h3 {
+        font-size: 30px;
+    }
+
+    #faq,
+    #contato {
+        padding: 40px 15px !important;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
